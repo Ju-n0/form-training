@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="./assets/js/main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Mon premier formulaire</h1>
+    <form method="get">
+      <fieldset class="personalData">
+        <legend>Tes infos persos</legend>
+        <div>
+          <label for="firstname">Quel est ton prénom ?</label>
+          <input type="text" placeholder="ton prénom ici" id="firstname" value="" />
+        </div>
+        <div>
+          <label for="lastname">Quel est ton nom ?</label>
+          <input type="text" placeholder="ton nom ici" id="lastname" value="" />
+        </div>
+        <div>
+          <label for="age">Quel est ton âge?</label>
+          <input type="text" placeholder="ton âge ici" id="age" value="" />
+        </div>
+        <div>
+          <label for="sex">Quel est ton genre ?</label><br />
+          <div class="gender-container">
+            <div>
+              <input type="radio" name="sexe" id="feminin" id="sex" />
+              <label class="sexInfo" for="feminin">feminin</label>
+            </div>
+            <div>
+              <input type="radio" name="sexe" id="masculin" />
+              <label class="sexInfo" for="masculin">masculin</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="presentation">
+        <legend>En quelques mots</legend>
+        <div class="presentation_container">
+          <label for="presentation">Dis nous qui tu es :</label><br />
+          <textarea
+            class="inputPresentation"
+            maxlength="250"
+            placeholder="ta présentation"
+            id="presentation"
+          ></textarea>
+          <span id="countdown"></span>
+        </div>
+      </fieldset>
+
+      <fieldset class="address">
+        <legend>Ton adresse</legend>
+        <div>
+          <label for="streetNumber">Numéro de rue :</label>
+          <input type="text" id="streetNumber" />
+        </div>
+        <div>
+          <label for="streetName">Nom de rue :</label>
+          <input type="text" id="streetName" />
+        </div>
+        <div>
+          <label for="asKnownAs">lieu dit:</label>
+          <input type="text" id="asKnownAs" />
+        </div>
+        <div>
+          <label for="postalCode">Code postal :</label>
+          <input type="text" id="postalCode" value="" />
+        </div>
+        <div>
+          <label for="town">Ville :</label>
+          <input type="text" id="town" />
+        </div>
+        <div>
+          <label for="Country"> Pays :</label>
+          <select name="" id="Country">
+            <option value="FRANCE">France</option>
+            <option value="PORTUGAL">Portugal</option>
+            <option value="SPAIN">Espagne</option>
+            <option value="ITALY">Italie</option>
+            <option value="GERMANY">Allemagne</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset class="ids">
+        <legend>Identifiants de connexion</legend>
+        <div>
+          <label for="email">Quel est ton email ?</label>
+          <input type="text" placeholder="ton email ici" id="email" value="" />
+        </div>
+        <div>
+          <label for="password">
+            Choisis un mot de passe
+            <p>(8 caractères minimum)</p>
+          </label>
+          <input type="password" placeholder="ton mdp ici" id="password" />
+        </div>
+        <div>
+          <label for="password"> Confirme ton mot de passe </label><br />
+          <input type="password" placeholder="ton mdp ici" id="passwordConfirmation" />
+        </div>
+      </fieldset>
+      <button>ENVOYER</button>
+    </form>
+  </body>
+</html>
